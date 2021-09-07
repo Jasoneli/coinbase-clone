@@ -1,0 +1,785 @@
+                                            body {
+                                                margin: 0;
+                                                padding: 0;
+                                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                            }
+                                            
+                                            .body {
+                                                margin: 0;
+                                                padding: 0;
+                                                display: block;
+                                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                            }
+                                            
+                                            .header {
+                                                position: static;
+                                                z-index: 2;
+                                                width: 100%;
+                                                height: 67px;
+                                                box-sizing: border-box;
+                                                border-style: solid;
+                                                border-width: 0;
+                                                display: block;
+                                                width: 100%;
+                                                border-bottom: 1px solid rgb(236, 239, 241);
+                                                top: 0px;
+                                                background: rgb(255, 255, 255);
+                                            }
+                                            
+                                            .main-container {
+                                                max-width: 1180px;
+                                                margin: 0px auto;
+                                                display: flex;
+                                                align-items: stretch;
+                                                padding: 0px 20px;
+                                                box-sizing: content-box;
+                                                border-style: solid;
+                                                border-width: 0;
+                                            }
+                                            
+                                            .coinbase {
+                                                display: flex;
+                                                align-items: center;
+                                                padding-bottom: 3px;
+                                                flex: 2 1 0%;
+                                                box-sizing: border-box;
+                                                border-style: solid;
+                                                border-width: 0;
+                                            }
+                                            
+                                            .coinbase-image {
+                                                display: inline-flex;
+                                                text-decoration: none;
+                                                padding: 0px 20px;
+                                                cursor: pointer;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                color: rgb(0, 82, 255);
+                                            }
+                                            
+                                            #cbw {
+                                                display: flex;
+                                                width: 112px;
+                                                text-decoration: none;
+                                                cursor: pointer;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                color: rgb(0, 82, 255);
+                                                height: 20px;
+                                            }
+                                            
+                                            .navbar {
+                                                display: flex;
+                                                flex: 6 1 0%;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .pricea {
+                                                text-decoration: none;
+                                                cursor: pointer;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                color: rgb(0, 82, 255);
+                                                line-height: 15px;
+                                                display: inline-flex;
+                                            }
+                                            
+                                            .pricediv {
+                                                margin: 0px 18px;
+                                                display: inline-flex;
+                                                align-items: center;
+                                                position: relative;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .pricespan {
+                                                margin: 0px;
+                                                font-size: 14px;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                font-weight: 500;
+                                                line-height: 16px;
+                                                color: rgb(5, 15, 25);
+                                                text-align: center;
+                                            }
+                                            
+                                            .pricespan:hover {
+                                                border-bottom: 4px solid blue;
+                                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                                width: inherit;
+                                                padding-bottom: 15px;
+                                                padding-top: 20px;
+                                            }
+                                            
+                                            .learna {
+                                                text-decoration: none;
+                                                cursor: pointer;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                color: rgb(0, 82, 255);
+                                                line-height: 15px;
+                                                display: inline-flex;
+                                            }
+                                            
+                                            .learndiv {
+                                                margin: 0px 18px;
+                                                display: inline-flex;
+                                                align-items: center;
+                                                position: relative;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .learnspan {
+                                                margin: 0px;
+                                                font-size: 14px;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                font-weight: 500;
+                                                line-height: 16px;
+                                                color: rgb(5, 15, 25);
+                                                text-align: center;
+                                            }
+                                            
+                                            .learnspan:hover {
+                                                border-bottom: 5px solid blue;
+                                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                                width: inherit;
+                                                padding-bottom: 15px;
+                                                padding-top: 20px;
+                                            }
+                                            
+                                            .individualsdiv {
+                                                margin: 0px 18px;
+                                                display: inline-flex;
+                                                align-items: center;
+                                                position: relative;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .individualsspan {
+                                                margin: 0px;
+                                                font-size: 14px;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                font-weight: 500;
+                                                line-height: 16px;
+                                                color: rgb(5, 15, 25);
+                                                text-align: center;
+                                            }
+                                            
+                                            .individualsspan:hover {
+                                                border-bottom: 5px solid blue;
+                                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                                width: inherit;
+                                                padding-bottom: 15px;
+                                                padding-top: 20px;
+                                            }
+                                            
+                                            .businessdiv {
+                                                margin: 0px 18px;
+                                                display: inline-flex;
+                                                align-items: center;
+                                                position: relative;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .businessspan {
+                                                margin: 0px;
+                                                font-size: 14px;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                font-weight: 500;
+                                                line-height: 16px;
+                                                color: rgb(5, 15, 25);
+                                                text-align: center;
+                                            }
+                                            
+                                            .businessspan:hover {
+                                                border-bottom: 5px solid blue;
+                                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                                width: inherit;
+                                                padding-bottom: 15px;
+                                                padding-top: 20px;
+                                            }
+                                            
+                                            .developersdiv {
+                                                margin: 0px 18px;
+                                                display: inline-flex;
+                                                align-items: center;
+                                                position: relative;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .developersspan {
+                                                margin: 0px;
+                                                font-size: 14px;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                font-weight: 500;
+                                                line-height: 16px;
+                                                color: rgb(5, 15, 25);
+                                                text-align: center;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .developersspan:hover {
+                                                border-bottom: 5px solid blue;
+                                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                                width: inherit;
+                                                padding-bottom: 15px;
+                                                padding-top: 20px;
+                                            }
+                                            
+                                            .companydiv {
+                                                margin: 0px 18px;
+                                                display: inline-flex;
+                                                align-items: center;
+                                                position: relative;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .companyspan {
+                                                margin: 0px;
+                                                font-size: 14px;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                font-weight: 500;
+                                                line-height: 16px;
+                                                color: rgb(5, 15, 25);
+                                                text-align: center;
+                                            }
+                                            
+                                            .companyspan:hover {
+                                                border-bottom: 5px solid blue;
+                                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                                width: inherit;
+                                                padding-bottom: 15px;
+                                                padding-top: 20px;
+                                            }
+                                            
+                                            .signlog {
+                                                display: flex;
+                                                padding: 15px 0px;
+                                                flex: 2 1 0%;
+                                                justify-content: flex-end;
+                                                align-items: center;
+                                            }
+                                            
+                                            .signin-a {
+                                                line-height: 16px;
+                                                margin-right: 20px;
+                                                color: inherit;
+                                                text-decoration: none;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .signin-a:hover {
+                                                background-color: transparent;
+                                                color: blue;
+                                            }
+                                            
+                                            .signin-span {
+                                                margin: 0px;
+                                                font-size: 14px;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                font-weight: 500;
+                                                line-height: 16px;
+                                                color: rgb(5, 15, 25);
+                                            }
+                                            
+                                            .getstarted-span {
+                                                text-decoration: none;
+                                                cursor: pointer;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                color: rgb(0, 82, 255);
+                                            }
+                                            
+                                            .getstarted {
+                                                position: relative;
+                                                width: auto;
+                                                margin: 0px;
+                                                border-radius: 4px;
+                                                font-weight: 500;
+                                                color: rgb(255, 255, 255);
+                                                cursor: pointer;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                padding: 10px 12px;
+                                                font-size: 14px;
+                                                line-height: 14px;
+                                                border: 1px solid rgb(0, 82, 255);
+                                                background-color: rgb(0, 81, 255);
+                                            }
+                                            
+                                            .getstarted-div {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                width: 100%;
+                                                pointer-events: none;
+                                                font-weight: 500;
+                                                color: rgb(255, 255, 255);
+                                                cursor: pointer;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                padding: 10px 12px;
+                                                font-size: 14px;
+                                                line-height: 14px;
+                                                border: 1px solid rgb(0, 82, 255);
+                                                background-color: rgb(0, 82, 255);
+                                            }
+                                            
+                                            .getstarted:hover {
+                                                animation: 0.4s;
+                                                background-color: rgb(17, 13, 240);
+                                            }
+                                            
+                                            .portfolio {
+                                                display: flex;
+                                                align-items: center;
+                                                flex-direction: row;
+                                                box-sizing: border-box;
+                                                border-style: solid;
+                                                border-width: 0;
+                                            }
+                                            
+                                            .portfolio-section {
+                                                display: flex;
+                                                cursor: pointer;
+                                                align-items: flex-start;
+                                                flex-direction: column;
+                                                padding-top: 100px;
+                                                padding-bottom: 111px;
+                                                padding-left: 150px;
+                                                flex-grow: 1;
+                                                flex-shrink: 1;
+                                                flex-basis: 0%;
+                                            }
+                                            
+                                            .portfolio-first-section {
+                                                display: flex;
+                                                cursor: pointer;
+                                                align-items: center;
+                                                flex-direction: row;
+                                                color: rgb(0, 82, 255);
+                                                font-weight: 600;
+                                            }
+                                            
+                                            .portbluelogo {
+                                                display: flex;
+                                                cursor: pointer;
+                                                align-items: center;
+                                                width: 24px;
+                                                height: 24px;
+                                                object-fit: cover;
+                                                fill: none;
+                                                margin-right: 8px;
+                                            }
+                                            
+                                            .portarrow {
+                                                height: 12px;
+                                                width: 16px;
+                                                fill: none;
+                                                font-weight: 4000;
+                                                margin-left: 0;
+                                                color: rgb(0, 82, 255);
+                                                margin-top: 8px;
+                                                margin-right: 8px;
+                                                margin-bottom: 8px;
+                                                margin-left: 8px;
+                                            }
+                                            
+                                            .fsbt {
+                                                font-size: 62px;
+                                                font-weight: 600;
+                                                line-height: 1.15;
+                                                margin-top: 8px;
+                                                margin-bottom: 16px;
+                                            }
+                                            
+                                            .fsbti {
+                                                font-size: 62px;
+                                                font-weight: 600;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                line-height: 1.15;
+                                                margin-top: 0.68em;
+                                                margin-bottom: 0.68em;
+                                                margin-left: 0;
+                                                margin-right: 0;
+                                                box-sizing: border-box;
+                                                border-style: solid;
+                                                border-width: 0;
+                                            }
+                                            
+                                            .fsst {
+                                                font-size: 20px;
+                                                font-weight: 500;
+                                                line-height: 1.4;
+                                                margin-bottom: 32px;
+                                            }
+                                            
+                                            .fsfs {
+                                                display: flex;
+                                                align-items: flex-start;
+                                                flex-direction: column;
+                                                min-width: 480px;
+                                                box-sizing: border-box;
+                                                border-style: solid;
+                                                border-width: 0;
+                                            }
+                                            
+                                            .fsfsef {
+                                                display: flex;
+                                                flex-direction: row;
+                                                width: 100%;
+                                            }
+                                            
+                                            .fsfse {
+                                                display: flex;
+                                                flex: 1 1 auto;
+                                                flex-direction: row;
+                                                position: relative;
+                                                border-width: 1px;
+                                                border-style: solid;
+                                                border-color: gray;
+                                                border-radius: 4px;
+                                                transition: all 0.15s ease 0s;
+                                                background: rgb(255, 255, 255);
+                                            }
+                                            
+                                            .fsfsei {
+                                                z-index: 0;
+                                                flex: 1 1 0px;
+                                                width: 100%;
+                                                margin: 0px;
+                                                padding: 20px;
+                                                border: none;
+                                                border-radius: 3px;
+                                                background: none;
+                                                font-size: 18px;
+                                                font-weight: 400;
+                                                letter-spacing: normal;
+                                                word-spacing: normal;
+                                                text-transform: none;
+                                                text-indent: 0px;
+                                                text-shadow: none;
+                                                display: inline-block;
+                                                text-align: start;
+                                                appearance: auto;
+                                            }
+                                            
+                                            .fsbs {
+                                                margin-left: 16px;
+                                                box-sizing: border-box;
+                                                height: 100%;
+                                                margin: 0;
+                                                font-weight: 400;
+                                            }
+                                            
+                                            .fsbsb {
+                                                position: relative;
+                                                width: 100%;
+                                                margin: 0px;
+                                                border-radius: 4px;
+                                                color: rgb(197, 197, 197);
+                                                cursor: pointer;
+                                                transition: all 80ms ease-in-out 0s;
+                                                padding: 24px;
+                                                font-size: 16px;
+                                                border: 1px solid rgb(0, 82, 225);
+                                                background-color: rgb(0, 82, 225);
+                                                margin-left: 16px;
+                                            }
+                                            
+                                            .fsbsbt {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                width: 100%;
+                                                pointer-events: none;
+                                                flex-wrap: nowrap;
+                                                white-space: nowrap;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                font-weight: 500;
+                                                font-size: 16px;
+                                                text-transform: none;
+                                            }
+                                            
+                                            .fsbsbti {
+                                                margin-left: var(--spacing-3);
+                                                margin-right: var(--spacing-3);
+                                                font-weight: 500;
+                                            }
+                                            
+                                            .terms {
+                                                font-size: 9px;
+                                                margin-top: 12px;
+                                                text-decoration: underline;
+                                                color: #0667d0;
+                                            }
+                                            
+                                            .pss {
+                                                display: flex;
+                                                padding-top: 40px;
+                                                padding-left: 24px;
+                                                justify-content: flex-end;
+                                                flex: 2 1 0%;
+                                            }
+                                            
+                                            .pssi {
+                                                margin-right: 50px;
+                                            }
+                                            
+                                            .price-table-positioner {
+                                                position: relative;
+                                                display: block;
+                                            }
+                                            
+                                            .static-layout {
+                                                display: flex;
+                                                flex-shrink: 0;
+                                                width: 100%;
+                                                margin: 0px auto;
+                                                flex-direction: column;
+                                                padding: 0px;
+                                                max-width: 1142px;
+                                                border: 1px solid rgba(91, 97, 110, 0.2);
+                                                border-radius: 4px;
+                                                box-shadow: 0 4px 12px 0 rgba(50, 53, 61, 0.02);
+                                            }
+                                            
+                                            .asset-table {
+                                                width: 100%;
+                                                border-radius: 0px;
+                                                overflow-x: auto;
+                                            }
+                                            
+                                            .table {
+                                                width: 100%;
+                                                padding: 0px;
+                                                background: rgb(255, 255, 255);
+                                                border-spacing: 0px;
+                                                border-collapse: separate;
+                                                caption-side: top;
+                                            }
+                                            
+                                            .colg {
+                                                width: 32px;
+                                                align-items: center;
+                                            }
+                                            
+                                            .asset-table-helpers-head {
+                                                display: table-header-group;
+                                                vertical-align: middle;
+                                                border: none;
+                                                width: 100%;
+                                                padding: 0px;
+                                                background: rgb(255, 255, 255);
+                                                border-spacing: 0px;
+                                                border-collapse: separate;
+                                                caption-side: top;
+                                                align-items: center;
+                                            }
+                                            
+                                            .asset-table-helpers-row {
+                                                border-top: 1px solid 1px solid rgb(91, 97, 110);
+                                                display: table-row;
+                                                vertical-align: inherit;
+                                                border-color: inherit;
+                                            }
+                                            
+                                            .asset-table-helpers-th {
+                                                padding-left: 32px;
+                                                padding: 16px 48px 16px 0px;
+                                                border-bottom: none;
+                                                text-align: left;
+                                                display: table-cell;
+                                                vertical-align: inherit;
+                                                font-weight: bold;
+                                            }
+                                            
+                                            .asset-helpers-column {
+                                                align-items: center;
+                                                text-align: center;
+                                            }
+                                            
+                                            .text-element1 {
+                                                display: block;
+                                                width: auto;
+                                                font-weight: 400;
+                                                align-items: center;
+                                                white-space: nowrap;
+                                                font-size: 14px;
+                                                line-height: 1.6;
+                                                color: rgb(208, 208, 209);
+                                                transition: color 80ms ease-in-out 0s;
+                                            }
+                                            
+                                            .asset-table-body {
+                                                display: table-row-group;
+                                                vertical-align: middle;
+                                                padding: 0px;
+                                                border: none;
+                                                transition: opacity 300ms ease 0s;
+                                            }
+                                            
+                                            .asset-table-row {
+                                                display: table-row;
+                                                vertical-align: inherit;
+                                                border-color: inherit;
+                                                text-indent: initial;
+                                                background: rgb(255, 255, 255);
+                                                user-select: none;
+                                            }
+                                            
+                                            .asset-table-column2 {
+                                                padding: 14px 48px 14px 0px;
+                                                border-top: 1px solid rgb(208, 208, 209);
+                                                cursor: default;
+                                                position: relative;
+                                                width: 85px;
+                                                display: table-cell;
+                                                vertical-align: inherit;
+                                            }
+                                            
+                                            .text-element2 {
+                                                text-align: center;
+                                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                                line-height: 1.3;
+                                                color: rgb(91, 97, 110);
+                                                font-size: 18px;
+                                                font-weight: 400;
+                                                display: block;
+                                                margin: 0px;
+                                            }
+                                            
+                                            .asset-table-column2two {
+                                                padding: 14px 48px 14px 0px;
+                                                border-top: 1px solid rgb(208, 208, 209);
+                                                cursor: pointer;
+                                                min-width: 140px;
+                                            }
+                                            
+                                            .asset-table-column2two-inner {
+                                                display: flex;
+                                                flex: 1 1 auto;
+                                                align-items: center;
+                                                flex-direction: row;
+                                            }
+                                            
+                                            .asset-table-column2two-inner-img {
+                                                flex-shrink: 0;
+                                                border-radius: 100%;
+                                                height: 36px;
+                                                width: 36px;
+                                                aspect-ratio: auto 36 / 36;
+                                            }
+                                            
+                                            .asset-table-column2two-inner-text {
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: center;
+                                            }
+                                            
+                                            .asset-table-column2two-inner-text-one {
+                                                padding-left: 16px;
+                                                text-align: left;
+                                                line-height: 1.3;
+                                                color: rgb(10, 11, 13);
+                                                font-size: 18px;
+                                                font-weight: 400;
+                                                display: block;
+                                                margin: 0px;
+                                            }
+                                            
+                                            .asset-table-column2two-inner-text-two {
+                                                padding-left: 16px;
+                                                text-align: left;
+                                                line-height: 1.3;
+                                                color: rgb(208, 208, 209);
+                                                font-size: 18px;
+                                                font-weight: 400;
+                                                display: block;
+                                                margin: 0px;
+                                            }
+                                            
+                                            .atc3 {
+                                                padding: 14px 48px 14px 0px;
+                                                border-top: 1px solid rgb(208, 208, 209);
+                                                cursor: default;
+                                                width: 132px;
+                                            }
+                                            
+                                            .atc3t {
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: flex-start;
+                                            }
+                                            
+                                            .atc3t1 {
+                                                text-align: left;
+                                                line-height: 1.3;
+                                                color: rgb(10, 11, 13);
+                                                font-size: 18px;
+                                                font-weight: 400;
+                                                display: block;
+                                                margin: 0px;
+                                            }
+                                            
+                                            .atc3t2 {
+                                                display: none;
+                                                width: 100%;
+                                                text-align: right;
+                                                font-variant-numeric: tabular-nums;
+                                                line-height: 1.3;
+                                                color: rgb(-9, 133, 81);
+                                                font-size: 18px;
+                                                font-weight: 400;
+                                            }
+                                            
+                                            .atc4 {
+                                                padding: 14px 48px 14px 0px;
+                                                border-top: 1px solid rgb(208, 208, 209);
+                                                cursor: default;
+                                                width: 100px;
+                                                margin-right: 20px;
+                                                text-align: left;
+                                            }
+                                            
+                                            .atc4t {
+                                                width: 100%;
+                                                text-align: right;
+                                                font-variant-numeric: tabular-nums;
+                                                line-height: 1.3;
+                                                color: rgb(-9, 133, 81);
+                                                font-size: 18px;
+                                                font-weight: 400;
+                                                display: block;
+                                                margin: 0px;
+                                            }
+                                            
+                                            .atc5 {
+                                                border-top: 1px solid rgb(208, 208, 209);
+                                                cursor: default;
+                                                width: 100px;
+                                                padding: 5px 25px 5px 5px;
+                                            }
+                                            
+                                            .atc5i {
+                                                flex-shrink: 0;
+                                                border-radius: 100%;
+                                                height: 36px;
+                                                width: 36px;
+                                                aspect-ratio: auto 36 / 36;
+                                            }
+                                            
+                                            .atc6 {
+                                                width: 70px;
+                                                padding-right: 32px;
+                                                padding: 14px 48px 14px 0px;
+                                                border-top: 1px solid rgb(208, 208, 209);
+                                                cursor: default;
+                                            }
+                                            
+                                            .atc6b {
+                                                padding: 8px 16px;
+                                                white-space: nowrap;
+                                                position: relative;
+                                                width: auto;
+                                                margin: 0px;
+                                                border-radius: 4px;
+                                                color: rgb(255, 255, 255);
+                                                cursor: pointer;
+                                                transition: all 80ms ease-in-out 0s;
+                                                font-size: 14px;
+                                                border: 1px solid rgb(9, 133, 81);
+                                                background-color: rgb(9, 133, 81);
+                                            }

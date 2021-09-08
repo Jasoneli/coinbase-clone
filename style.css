@@ -1088,3 +1088,100 @@
                                     .st3m2i {
                                         width: 100%;
                                     }
+                                    
+                                    .divider {
+                                        width: 100%;
+                                        height: 1px;
+                                        background-color: rgb(238, 240, 243);
+                                    }
+                                    
+                                    .st4 {
+                                        display: flex;
+                                        flex-shrink: 0;
+                                        width: 100%;
+                                        max-width: 1180px;
+                                        margin: 0px auto;
+                                        padding: 24px;
+                                    }
+                                    
+                                    .st4s {
+                                        display: flex;
+                                        flex-shrink: 0;
+                                        width: 100%;
+                                        max-width: 1180px;
+                                        margin: 0px auto;
+                                        padding: 24px;
+                                    }
+                                    
+                                    .st4sh {
+                                        display: flex;
+                                        align-items: center;
+                                        flex-direction: column;
+                                        margin: 64px 0px;
+                                        width: 100%;
+                                    }
+                                    
+                                    .st4smh {
+                                        margin-top: 0px;
+                                        margin-bottom: 24px;
+                                        line-height: 48px;
+                                        font-size: 40px;
+                                        color: rgba(10, 11, 13, 1);
+                                        font-weight: 500;
+                                        text-align: center;
+                                    }
+                                    
+                                    .st4sp {
+                                        font-size: 18px;
+                                        color: rgb(91, 97, 110);
+                                        margin: 0px;
+                                    }
+                                    
+                                    .st4sm {
+                                        display: flex;
+                                        width: 100%;
+                                        margin-top: 100px;
+                                        flex-direction: row;
+                                    }
+                                    
+                                    .st4sm1 {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        padding: 0px 24px;
+                                        text-align: center;
+                                        margin-bottom: 40px;
+                                    }
+                                    
+                                    .st4sm1s {
+                                        width: 30;
+                                        height: 30;
+                                        fill: none;
+                                        overflow: hidden;
+                                    }
+                                    
+                                    .m1sh {
+                                        margin-top: 32px;
+                                        margin-bottom: 0px;
+                                        font-size: 20px;
+                                        font-weight: 500;
+                                        color: rgba(10, 11, 13, 1);
+                                        text-align: center;
+                                    }
+                                    
+                                    .m1sp {
+                                        color: rgb(91, 97, 110);
+                                        margin: 16px 0 24px;
+                                        line-height: 24px;
+                                        font-size: 16px;
+                                    }
+                                    
+                                    .m1spa {
+                                        line-height: 28px;
+                                        color: rgb(0, 82, 255);
+                                        cursor: pointer;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        text-decoration: none;
+                                        transition: color 0.25s ease 0s;
+                                    }

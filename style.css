@@ -1,1377 +1,1510 @@
-                                    body {
-                                        margin: 0;
-                                        padding: 0;
-                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                                    }
-                                    
-                                    .body {
-                                        margin: 0;
-                                        padding: 0;
-                                        display: block;
-                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                                    }
-                                    
-                                    .header {
-                                        position: static;
-                                        z-index: 2;
-                                        width: 100%;
-                                        height: 67px;
-                                        box-sizing: border-box;
-                                        border-style: solid;
-                                        border-width: 0;
-                                        display: block;
-                                        width: 100%;
-                                        border-bottom: 1px solid rgb(236, 239, 241);
-                                        top: 0px;
-                                        background: rgb(255, 255, 255);
-                                    }
-                                    
-                                    .main-container {
-                                        max-width: 1180px;
-                                        margin: 0px auto;
-                                        display: flex;
-                                        align-items: stretch;
-                                        padding: 0px 20px;
-                                        box-sizing: content-box;
-                                        border-style: solid;
-                                        border-width: 0;
-                                    }
-                                    
-                                    .coinbase {
-                                        display: flex;
-                                        align-items: center;
-                                        padding-bottom: 3px;
-                                        flex: 2 1 0%;
-                                        box-sizing: border-box;
-                                        border-style: solid;
-                                        border-width: 0;
-                                    }
-                                    
-                                    .coinbase-image {
-                                        display: inline-flex;
-                                        text-decoration: none;
-                                        padding: 0px 20px;
-                                        cursor: pointer;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        color: rgb(0, 82, 255);
-                                    }
-                                    
-                                    #cbw {
-                                        display: flex;
-                                        width: 112px;
-                                        text-decoration: none;
-                                        cursor: pointer;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        color: rgb(0, 82, 255);
-                                        height: 20px;
-                                    }
-                                    
-                                    .navbar {
-                                        display: flex;
-                                        flex: 6 1 0%;
-                                        justify-content: center;
-                                    }
-                                    
-                                    .pricea {
-                                        text-decoration: none;
-                                        cursor: pointer;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        color: rgb(0, 82, 255);
-                                        line-height: 15px;
-                                        display: inline-flex;
-                                    }
-                                    
-                                    .pricediv {
-                                        margin: 0px 18px;
-                                        display: inline-flex;
-                                        align-items: center;
-                                        position: relative;
-                                        cursor: pointer;
-                                    }
-                                    
-                                    .pricespan {
-                                        margin: 0px;
-                                        font-size: 14px;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        font-weight: 500;
-                                        line-height: 16px;
-                                        color: rgb(5, 15, 25);
-                                        text-align: center;
-                                    }
-                                    
-                                    .pricespan:hover {
-                                        border-bottom: 4px solid blue;
-                                        animation: 0.4s ease-in-out 0s 1 normal none running;
-                                        width: inherit;
-                                        padding-bottom: 15px;
-                                        padding-top: 20px;
-                                    }
-                                    
-                                    .learna {
-                                        text-decoration: none;
-                                        cursor: pointer;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        color: rgb(0, 82, 255);
-                                        line-height: 15px;
-                                        display: inline-flex;
-                                    }
-                                    
-                                    .learndiv {
-                                        margin: 0px 18px;
-                                        display: inline-flex;
-                                        align-items: center;
-                                        position: relative;
-                                        cursor: pointer;
-                                    }
-                                    
-                                    .learnspan {
-                                        margin: 0px;
-                                        font-size: 14px;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        font-weight: 500;
-                                        line-height: 16px;
-                                        color: rgb(5, 15, 25);
-                                        text-align: center;
-                                    }
-                                    
-                                    .learnspan:hover {
-                                        border-bottom: 5px solid blue;
-                                        animation: 0.4s ease-in-out 0s 1 normal none running;
-                                        width: inherit;
-                                        padding-bottom: 15px;
-                                        padding-top: 20px;
-                                    }
-                                    
-                                    .individualsdiv {
-                                        margin: 0px 18px;
-                                        display: inline-flex;
-                                        align-items: center;
-                                        position: relative;
-                                        cursor: pointer;
-                                    }
-                                    
-                                    .individualsspan {
-                                        margin: 0px;
-                                        font-size: 14px;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        font-weight: 500;
-                                        line-height: 16px;
-                                        color: rgb(5, 15, 25);
-                                        text-align: center;
-                                    }
-                                    
-                                    .individualsspan:hover {
-                                        border-bottom: 5px solid blue;
-                                        animation: 0.4s ease-in-out 0s 1 normal none running;
-                                        width: inherit;
-                                        padding-bottom: 15px;
-                                        padding-top: 20px;
-                                    }
-                                    
-                                    .businessdiv {
-                                        margin: 0px 18px;
-                                        display: inline-flex;
-                                        align-items: center;
-                                        position: relative;
-                                        cursor: pointer;
-                                    }
-                                    
-                                    .businessspan {
-                                        margin: 0px;
-                                        font-size: 14px;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        font-weight: 500;
-                                        line-height: 16px;
-                                        color: rgb(5, 15, 25);
-                                        text-align: center;
-                                    }
-                                    
-                                    .businessspan:hover {
-                                        border-bottom: 5px solid blue;
-                                        animation: 0.4s ease-in-out 0s 1 normal none running;
-                                        width: inherit;
-                                        padding-bottom: 15px;
-                                        padding-top: 20px;
-                                    }
-                                    
-                                    .developersdiv {
-                                        margin: 0px 18px;
-                                        display: inline-flex;
-                                        align-items: center;
-                                        position: relative;
-                                        cursor: pointer;
-                                    }
-                                    
-                                    .developersspan {
-                                        margin: 0px;
-                                        font-size: 14px;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        font-weight: 500;
-                                        line-height: 16px;
-                                        color: rgb(5, 15, 25);
-                                        text-align: center;
-                                        cursor: pointer;
-                                    }
-                                    
-                                    .developersspan:hover {
-                                        border-bottom: 5px solid blue;
-                                        animation: 0.4s ease-in-out 0s 1 normal none running;
-                                        width: inherit;
-                                        padding-bottom: 15px;
-                                        padding-top: 20px;
-                                    }
-                                    
-                                    .companydiv {
-                                        margin: 0px 18px;
-                                        display: inline-flex;
-                                        align-items: center;
-                                        position: relative;
-                                        cursor: pointer;
-                                    }
-                                    
-                                    .companyspan {
-                                        margin: 0px;
-                                        font-size: 14px;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        font-weight: 500;
-                                        line-height: 16px;
-                                        color: rgb(5, 15, 25);
-                                        text-align: center;
-                                    }
-                                    
-                                    .companyspan:hover {
-                                        border-bottom: 5px solid blue;
-                                        animation: 0.4s ease-in-out 0s 1 normal none running;
-                                        width: inherit;
-                                        padding-bottom: 15px;
-                                        padding-top: 20px;
-                                    }
-                                    
-                                    .signlog {
-                                        display: flex;
-                                        padding: 15px 0px;
-                                        flex: 2 1 0%;
-                                        justify-content: flex-end;
-                                        align-items: center;
-                                    }
-                                    
-                                    .signin-a {
-                                        line-height: 16px;
-                                        margin-right: 20px;
-                                        color: inherit;
-                                        text-decoration: none;
-                                        cursor: pointer;
-                                    }
-                                    
-                                    .signin-a:hover {
-                                        background-color: transparent;
-                                        color: blue;
-                                    }
-                                    
-                                    .signin-span {
-                                        margin: 0px;
-                                        font-size: 14px;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        font-weight: 500;
-                                        line-height: 16px;
-                                        color: rgb(5, 15, 25);
-                                    }
-                                    
-                                    .getstarted-span {
-                                        text-decoration: none;
-                                        cursor: pointer;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        color: rgb(0, 82, 255);
-                                    }
-                                    
-                                    .getstarted {
-                                        position: relative;
-                                        width: auto;
-                                        margin: 0px;
-                                        border-radius: 4px;
-                                        font-weight: 500;
-                                        color: rgb(255, 255, 255);
-                                        cursor: pointer;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        padding: 10px 12px;
-                                        font-size: 14px;
-                                        line-height: 14px;
-                                        border: 1px solid rgb(0, 82, 255);
-                                        background-color: rgb(0, 81, 255);
-                                    }
-                                    
-                                    .getstarted-div {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        width: 100%;
-                                        pointer-events: none;
-                                        font-weight: 500;
-                                        color: rgb(255, 255, 255);
-                                        cursor: pointer;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        padding: 10px 12px;
-                                        font-size: 14px;
-                                        line-height: 14px;
-                                        border: 1px solid rgb(0, 82, 255);
-                                        background-color: rgb(0, 82, 255);
-                                    }
-                                    
-                                    .getstarted:hover {
-                                        animation: 0.4s;
-                                        background-color: rgb(17, 13, 240);
-                                    }
-                                    
-                                    .portfolio {
-                                        display: flex;
-                                        align-items: center;
-                                        flex-direction: row;
-                                        box-sizing: border-box;
-                                        border-style: solid;
-                                        border-width: 0;
-                                    }
-                                    
-                                    .portfolio-section {
-                                        display: flex;
-                                        cursor: pointer;
-                                        align-items: flex-start;
-                                        flex-direction: column;
-                                        padding-top: 100px;
-                                        padding-bottom: 111px;
-                                        padding-left: 150px;
-                                        flex-grow: 1;
-                                        flex-shrink: 1;
-                                        flex-basis: 0%;
-                                    }
-                                    
-                                    .portfolio-first-section {
-                                        display: flex;
-                                        cursor: pointer;
-                                        align-items: center;
-                                        flex-direction: row;
-                                        color: rgb(0, 82, 255);
-                                        font-weight: 600;
-                                    }
-                                    
-                                    .portbluelogo {
-                                        display: flex;
-                                        cursor: pointer;
-                                        align-items: center;
-                                        width: 24px;
-                                        height: 24px;
-                                        object-fit: cover;
-                                        fill: none;
-                                        margin-right: 8px;
-                                    }
-                                    
-                                    .portarrow {
-                                        height: 12px;
-                                        width: 16px;
-                                        fill: none;
-                                        font-weight: 4000;
-                                        margin-left: 0;
-                                        color: rgb(0, 82, 255);
-                                        margin-top: 8px;
-                                        margin-right: 8px;
-                                        margin-bottom: 8px;
-                                        margin-left: 8px;
-                                    }
-                                    
-                                    .fsbt {
-                                        font-size: 62px;
-                                        font-weight: 600;
-                                        line-height: 1.15;
-                                        margin-top: 8px;
-                                        margin-bottom: 16px;
-                                    }
-                                    
-                                    .fsbti {
-                                        font-size: 62px;
-                                        font-weight: 600;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        line-height: 1.15;
-                                        margin-top: 0.68em;
-                                        margin-bottom: 0.68em;
-                                        margin-left: 0;
-                                        margin-right: 0;
-                                        box-sizing: border-box;
-                                        border-style: solid;
-                                        border-width: 0;
-                                    }
-                                    
-                                    .fsst {
-                                        font-size: 20px;
-                                        font-weight: 500;
-                                        line-height: 1.4;
-                                        margin-bottom: 32px;
-                                    }
-                                    
-                                    .fsfs {
-                                        display: flex;
-                                        align-items: flex-start;
-                                        flex-direction: column;
-                                        min-width: 480px;
-                                        box-sizing: border-box;
-                                        border-style: solid;
-                                        border-width: 0;
-                                    }
-                                    
-                                    .fsfsef {
-                                        display: flex;
-                                        flex-direction: row;
-                                        width: 100%;
-                                    }
-                                    
-                                    .fsfse {
-                                        display: flex;
-                                        flex: 1 1 auto;
-                                        flex-direction: row;
-                                        position: relative;
-                                        border-width: 1px;
-                                        border-style: solid;
-                                        border-color: gray;
-                                        border-radius: 4px;
-                                        transition: all 0.15s ease 0s;
-                                        background: rgb(255, 255, 255);
-                                    }
-                                    
-                                    .fsfsei {
-                                        z-index: 0;
-                                        flex: 1 1 0px;
-                                        width: 100%;
-                                        margin: 0px;
-                                        padding: 20px;
-                                        border: none;
-                                        border-radius: 3px;
-                                        background: none;
-                                        font-size: 18px;
-                                        font-weight: 400;
-                                        letter-spacing: normal;
-                                        word-spacing: normal;
-                                        text-transform: none;
-                                        text-indent: 0px;
-                                        text-shadow: none;
-                                        display: inline-block;
-                                        text-align: start;
-                                        appearance: auto;
-                                    }
-                                    
-                                    .fsbs {
-                                        margin-left: 16px;
-                                        box-sizing: border-box;
-                                        height: 100%;
-                                        margin: 0;
-                                        font-weight: 400;
-                                    }
-                                    
-                                    .fsbsb {
-                                        position: relative;
-                                        width: 100%;
-                                        margin: 0px;
-                                        border-radius: 4px;
-                                        color: rgb(197, 197, 197);
-                                        cursor: pointer;
-                                        transition: all 80ms ease-in-out 0s;
-                                        padding: 24px;
-                                        font-size: 16px;
-                                        border: 1px solid rgb(0, 82, 225);
-                                        background-color: rgb(0, 82, 225);
-                                        margin-left: 16px;
-                                    }
-                                    
-                                    .fsbsbt {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        width: 100%;
-                                        pointer-events: none;
-                                        flex-wrap: nowrap;
-                                        white-space: nowrap;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        font-weight: 500;
-                                        font-size: 16px;
-                                        text-transform: none;
-                                    }
-                                    
-                                    .fsbsbti {
-                                        margin-left: var(--spacing-3);
-                                        margin-right: var(--spacing-3);
-                                        font-weight: 500;
-                                    }
-                                    
-                                    .terms {
-                                        font-size: 9px;
-                                        margin-top: 12px;
-                                        text-decoration: underline;
-                                        color: #0667d0;
-                                    }
-                                    
-                                    .pss {
-                                        display: flex;
-                                        padding-top: 40px;
-                                        padding-left: 24px;
-                                        justify-content: flex-end;
-                                        flex: 2 1 0%;
-                                    }
-                                    
-                                    .pssi {
-                                        margin-right: 50px;
-                                    }
-                                    
-                                    .price-table-positioner {
-                                        position: relative;
-                                        display: block;
-                                    }
-                                    
-                                    .static-layout {
-                                        display: flex;
-                                        flex-shrink: 0;
-                                        width: 100%;
-                                        margin: 0px auto;
-                                        flex-direction: column;
-                                        padding: 0px;
-                                        max-width: 1142px;
-                                        border: 1px solid rgba(91, 97, 110, 0.2);
-                                        border-radius: 4px;
-                                        box-shadow: 0 4px 12px 0 rgba(50, 53, 61, 0.02);
-                                    }
-                                    
-                                    .asset-table {
-                                        width: 100%;
-                                        border-radius: 0px;
-                                        overflow-x: auto;
-                                    }
-                                    
-                                    .table {
-                                        width: 100%;
-                                        padding: 0px;
-                                        background: rgb(255, 255, 255);
-                                        border-spacing: 0px;
-                                        border-collapse: separate;
-                                        caption-side: top;
-                                    }
-                                    
-                                    .colg {
-                                        width: 32px;
-                                        align-items: center;
-                                    }
-                                    
-                                    .asset-table-helpers-head {
-                                        display: table-header-group;
-                                        vertical-align: middle;
-                                        border: none;
-                                        width: 100%;
-                                        padding: 0px;
-                                        background: rgb(255, 255, 255);
-                                        border-spacing: 0px;
-                                        border-collapse: separate;
-                                        caption-side: top;
-                                        align-items: center;
-                                    }
-                                    
-                                    .asset-table-helpers-row {
-                                        border-top: 1px solid 1px solid rgb(91, 97, 110);
-                                        display: table-row;
-                                        vertical-align: inherit;
-                                        border-color: inherit;
-                                    }
-                                    
-                                    .asset-table-helpers-th {
-                                        padding-left: 32px;
-                                        padding: 16px 48px 16px 0px;
-                                        border-bottom: none;
-                                        text-align: left;
-                                        display: table-cell;
-                                        vertical-align: inherit;
-                                        font-weight: bold;
-                                    }
-                                    
-                                    .asset-helpers-column {
-                                        align-items: center;
-                                        text-align: center;
-                                    }
-                                    
-                                    .text-element1 {
-                                        display: block;
-                                        width: auto;
-                                        font-weight: 400;
-                                        align-items: center;
-                                        white-space: nowrap;
-                                        font-size: 14px;
-                                        line-height: 1.6;
-                                        color: rgb(208, 208, 209);
-                                        transition: color 80ms ease-in-out 0s;
-                                    }
-                                    
-                                    .asset-table-body {
-                                        display: table-row-group;
-                                        vertical-align: middle;
-                                        padding: 0px;
-                                        border: none;
-                                        transition: opacity 300ms ease 0s;
-                                    }
-                                    /*work on this later*/
-                                    
-                                    .asset-table-body:hover {
-                                        background-color: rgb(200, 200, 206);
-                                    }
-                                    
-                                    .asset-table-row {
-                                        display: table-row;
-                                        vertical-align: inherit;
-                                        border-color: inherit;
-                                        text-indent: initial;
-                                        background: rgb(255, 255, 255);
-                                        user-select: none;
-                                    }
-                                    
-                                    .asset-table-column2 {
-                                        padding: 14px 48px 14px 0px;
-                                        border-top: 1px solid rgb(208, 208, 209);
-                                        cursor: default;
-                                        position: relative;
-                                        width: 85px;
-                                        display: table-cell;
-                                        vertical-align: inherit;
-                                    }
-                                    
-                                    .text-element2 {
-                                        text-align: center;
-                                        font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-                                        line-height: 1.3;
-                                        color: rgb(91, 97, 110);
-                                        font-size: 18px;
-                                        font-weight: 400;
-                                        display: block;
-                                        margin: 0px;
-                                    }
-                                    
-                                    .asset-table-column2two {
-                                        padding: 14px 48px 14px 0px;
-                                        border-top: 1px solid rgb(208, 208, 209);
-                                        cursor: pointer;
-                                        min-width: 140px;
-                                    }
-                                    
-                                    .asset-table-column2two-inner {
-                                        display: flex;
-                                        flex: 1 1 auto;
-                                        align-items: center;
-                                        flex-direction: row;
-                                    }
-                                    
-                                    .asset-table-column2two-inner-img {
-                                        flex-shrink: 0;
-                                        border-radius: 100%;
-                                        height: 36px;
-                                        width: 36px;
-                                        aspect-ratio: auto 36 / 36;
-                                    }
-                                    
-                                    .asset-table-column2two-inner-text {
-                                        display: flex;
-                                        flex-direction: row;
-                                        align-items: center;
-                                    }
-                                    
-                                    .asset-table-column2two-inner-text-one {
-                                        padding-left: 16px;
-                                        text-align: left;
-                                        line-height: 1.3;
-                                        color: rgb(10, 11, 13);
-                                        font-size: 18px;
-                                        font-weight: 400;
-                                        display: block;
-                                        margin: 0px;
-                                    }
-                                    
-                                    .asset-table-column2two-inner-text-two {
-                                        padding-left: 16px;
-                                        text-align: left;
-                                        line-height: 1.3;
-                                        color: rgb(208, 208, 209);
-                                        font-size: 18px;
-                                        font-weight: 400;
-                                        display: block;
-                                        margin: 0px;
-                                    }
-                                    
-                                    .atc3 {
-                                        padding: 14px 48px 14px 0px;
-                                        border-top: 1px solid rgb(208, 208, 209);
-                                        cursor: default;
-                                        width: 132px;
-                                    }
-                                    
-                                    .atc3t {
-                                        display: flex;
-                                        flex-direction: row;
-                                        align-items: flex-start;
-                                    }
-                                    
-                                    .atc3t1 {
-                                        text-align: left;
-                                        line-height: 1.3;
-                                        color: rgb(10, 11, 13);
-                                        font-size: 18px;
-                                        font-weight: 400;
-                                        display: block;
-                                        margin: 0px;
-                                    }
-                                    
-                                    .atc3t2 {
-                                        display: none;
-                                        width: 100%;
-                                        text-align: right;
-                                        font-variant-numeric: tabular-nums;
-                                        line-height: 1.3;
-                                        color: rgb(-9, 133, 81);
-                                        font-size: 18px;
-                                        font-weight: 400;
-                                    }
-                                    
-                                    .atc4 {
-                                        padding: 14px 48px 14px 0px;
-                                        border-top: 1px solid rgb(208, 208, 209);
-                                        cursor: default;
-                                        width: 100px;
-                                        margin-right: 20px;
-                                        text-align: left;
-                                    }
-                                    
-                                    .atc4t {
-                                        width: 100%;
-                                        text-align: right;
-                                        font-variant-numeric: tabular-nums;
-                                        line-height: 1.3;
-                                        color: rgb(-9, 133, 81);
-                                        font-size: 18px;
-                                        font-weight: 400;
-                                        display: block;
-                                        margin: 0px;
-                                    }
-                                    
-                                    .atc5 {
-                                        border-top: 1px solid rgb(208, 208, 209);
-                                        cursor: default;
-                                        width: 100px;
-                                        padding: 5px 25px 5px 5px;
-                                    }
-                                    
-                                    .atc5i {
-                                        flex-shrink: 0;
-                                        border-radius: 100%;
-                                        height: 36px;
-                                        width: 36px;
-                                        aspect-ratio: auto 36 / 36;
-                                    }
-                                    
-                                    .atc6 {
-                                        width: 70px;
-                                        padding-right: 32px;
-                                        padding: 14px 48px 14px 0px;
-                                        border-top: 1px solid rgb(208, 208, 209);
-                                        cursor: default;
-                                    }
-                                    
-                                    .atc6b {
-                                        padding: 8px 16px;
-                                        white-space: nowrap;
-                                        position: relative;
-                                        width: auto;
-                                        margin: 0px;
-                                        border-radius: 4px;
-                                        color: rgb(255, 255, 255);
-                                        cursor: pointer;
-                                        transition: all 80ms ease-in-out 0s;
-                                        font-size: 14px;
-                                        border: 1px solid rgb(9, 133, 81);
-                                        background-color: rgb(9, 133, 81);
-                                    }
-                                    
-                                    .static-layout2 {
-                                        display: flex;
-                                        flex-shrink: 0;
-                                        width: 100%;
-                                        max-width: 900px;
-                                        margin: 0px auto;
-                                        padding: 24px;
-                                    }
-                                    
-                                    .st2-contents {
-                                        display: flex;
-                                        flex-direction: row;
-                                        flex-grow: 1;
-                                    }
-                                    
-                                    .st2c {
-                                        display: flex;
-                                        flex-direction: row;
-                                        flex-grow: 1;
-                                        flex-shrink: 0;
-                                        flex-basis: auto;
-                                        position: relative;
-                                        /*background-color: rgb(91, 97, 110);*/
-                                        height: auto;
-                                        width: 100%;
-                                    }
-                                    
-                                    .st2c-earn {
-                                        display: flex;
-                                        justify-content: flex-start;
-                                        flex-direction: row;
-                                        flex: 1 1 50%;
-                                        width: 100%;
-                                    }
-                                    
-                                    .st2c-earn-contents {
-                                        display: flex;
-                                        flex-direction: column;
-                                        max-width: 350px;
-                                        justify-content: center;
-                                        z-index: 1;
-                                        min-width: 250px;
-                                    }
-                                    
-                                    .st2c-earn-contents-h2 {
-                                        line-height: 1.3;
-                                        color: rgb(10, 11, 13);
-                                        font-size: 32px;
-                                        font-weight: 500;
-                                        display: block;
-                                        margin: 0px 0px 16px;
-                                    }
-                                    
-                                    .st2c-earn-contents-p {
-                                        font-size: 14px;
-                                        line-height: 1.6;
-                                        font-weight: 400;
-                                        color: rgb(10, 11, 13);
-                                    }
-                                    
-                                    .st2c-earn-contents-div {
-                                        display: block;
-                                    }
-                                    
-                                    .st2c-button {
-                                        position: relative;
-                                        width: auto;
-                                        margin: 0px;
-                                        border-radius: 4px;
-                                        color: rgb(255, 255, 255);
-                                        cursor: pointer;
-                                        transition: all 80ms ease-in-out 0s;
-                                        padding: 12px 16px;
-                                        font-size: 14px;
-                                        border: 1px solid rgb(0, 82, 255);
-                                        background-color: rgb(0, 82, 255);
-                                    }
-                                    
-                                    .st2c-bs {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        width: 100%;
-                                        pointer-events: none;
-                                        flex-wrap: nowrap;
-                                        white-space: nowrap;
-                                        font-weight: 500;
-                                    }
-                                    
-                                    .st2c-banner {
-                                        display: flex;
-                                        justify-content: flex-end;
-                                        flex-direction: row;
-                                        flex: 1 1 50%;
-                                        width: 100%;
-                                    }
-                                    /* .st2c-banner:hover {
+                            body {
+                                margin: 0;
+                                padding: 0;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+                            
+                            .body {
+                                margin: 0;
+                                padding: 0;
+                                display: block;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+                            
+                            .header {
+                                position: static;
+                                z-index: 2;
+                                width: 100%;
+                                height: 67px;
+                                box-sizing: border-box;
+                                border-style: solid;
+                                border-width: 0;
+                                display: block;
+                                width: 100%;
+                                border-bottom: 1px solid rgb(236, 239, 241);
+                                top: 0px;
+                                background: rgb(255, 255, 255);
+                            }
+                            
+                            .main-container {
+                                max-width: 1180px;
+                                margin: 0px auto;
+                                display: flex;
+                                align-items: stretch;
+                                padding: 0px 20px;
+                                box-sizing: content-box;
+                                border-style: solid;
+                                border-width: 0;
+                            }
+                            
+                            .coinbase {
+                                display: flex;
+                                align-items: center;
+                                padding-bottom: 3px;
+                                flex: 2 1 0%;
+                                box-sizing: border-box;
+                                border-style: solid;
+                                border-width: 0;
+                            }
+                            
+                            .coinbase-image {
+                                display: inline-flex;
+                                text-decoration: none;
+                                padding: 0px 20px;
+                                cursor: pointer;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                color: rgb(0, 82, 255);
+                            }
+                            
+                            #cbw {
+                                display: flex;
+                                width: 112px;
+                                text-decoration: none;
+                                cursor: pointer;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                color: rgb(0, 82, 255);
+                                height: 20px;
+                            }
+                            
+                            .navbar {
+                                display: flex;
+                                flex: 6 1 0%;
+                                justify-content: center;
+                            }
+                            
+                            .pricea {
+                                text-decoration: none;
+                                cursor: pointer;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                color: rgb(0, 82, 255);
+                                line-height: 15px;
+                                display: inline-flex;
+                            }
+                            
+                            .pricediv {
+                                margin: 0px 18px;
+                                display: inline-flex;
+                                align-items: center;
+                                position: relative;
+                                cursor: pointer;
+                            }
+                            
+                            .pricespan {
+                                margin: 0px;
+                                font-size: 14px;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                font-weight: 500;
+                                line-height: 16px;
+                                color: rgb(5, 15, 25);
+                                text-align: center;
+                            }
+                            
+                            .pricespan:hover {
+                                border-bottom: 4px solid blue;
+                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                width: inherit;
+                                padding-bottom: 15px;
+                                padding-top: 20px;
+                            }
+                            
+                            .learna {
+                                text-decoration: none;
+                                cursor: pointer;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                color: rgb(0, 82, 255);
+                                line-height: 15px;
+                                display: inline-flex;
+                            }
+                            
+                            .learndiv {
+                                margin: 0px 18px;
+                                display: inline-flex;
+                                align-items: center;
+                                position: relative;
+                                cursor: pointer;
+                            }
+                            
+                            .learnspan {
+                                margin: 0px;
+                                font-size: 14px;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                font-weight: 500;
+                                line-height: 16px;
+                                color: rgb(5, 15, 25);
+                                text-align: center;
+                            }
+                            
+                            .learnspan:hover {
+                                border-bottom: 5px solid blue;
+                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                width: inherit;
+                                padding-bottom: 15px;
+                                padding-top: 20px;
+                            }
+                            
+                            .individualsdiv {
+                                margin: 0px 18px;
+                                display: inline-flex;
+                                align-items: center;
+                                position: relative;
+                                cursor: pointer;
+                            }
+                            
+                            .individualsspan {
+                                margin: 0px;
+                                font-size: 14px;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                font-weight: 500;
+                                line-height: 16px;
+                                color: rgb(5, 15, 25);
+                                text-align: center;
+                            }
+                            
+                            .individualsspan:hover {
+                                border-bottom: 5px solid blue;
+                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                width: inherit;
+                                padding-bottom: 15px;
+                                padding-top: 20px;
+                            }
+                            
+                            .businessdiv {
+                                margin: 0px 18px;
+                                display: inline-flex;
+                                align-items: center;
+                                position: relative;
+                                cursor: pointer;
+                            }
+                            
+                            .businessspan {
+                                margin: 0px;
+                                font-size: 14px;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                font-weight: 500;
+                                line-height: 16px;
+                                color: rgb(5, 15, 25);
+                                text-align: center;
+                            }
+                            
+                            .businessspan:hover {
+                                border-bottom: 5px solid blue;
+                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                width: inherit;
+                                padding-bottom: 15px;
+                                padding-top: 20px;
+                            }
+                            
+                            .developersdiv {
+                                margin: 0px 18px;
+                                display: inline-flex;
+                                align-items: center;
+                                position: relative;
+                                cursor: pointer;
+                            }
+                            
+                            .developersspan {
+                                margin: 0px;
+                                font-size: 14px;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                font-weight: 500;
+                                line-height: 16px;
+                                color: rgb(5, 15, 25);
+                                text-align: center;
+                                cursor: pointer;
+                            }
+                            
+                            .developersspan:hover {
+                                border-bottom: 5px solid blue;
+                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                width: inherit;
+                                padding-bottom: 15px;
+                                padding-top: 20px;
+                            }
+                            
+                            .companydiv {
+                                margin: 0px 18px;
+                                display: inline-flex;
+                                align-items: center;
+                                position: relative;
+                                cursor: pointer;
+                            }
+                            
+                            .companyspan {
+                                margin: 0px;
+                                font-size: 14px;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                font-weight: 500;
+                                line-height: 16px;
+                                color: rgb(5, 15, 25);
+                                text-align: center;
+                            }
+                            
+                            .companyspan:hover {
+                                border-bottom: 5px solid blue;
+                                animation: 0.4s ease-in-out 0s 1 normal none running;
+                                width: inherit;
+                                padding-bottom: 15px;
+                                padding-top: 20px;
+                            }
+                            
+                            .signlog {
+                                display: flex;
+                                padding: 15px 0px;
+                                flex: 2 1 0%;
+                                justify-content: flex-end;
+                                align-items: center;
+                            }
+                            
+                            .signin-a {
+                                line-height: 16px;
+                                margin-right: 20px;
+                                color: inherit;
+                                text-decoration: none;
+                                cursor: pointer;
+                            }
+                            
+                            .signin-a:hover {
+                                background-color: transparent;
+                                color: blue;
+                            }
+                            
+                            .signin-span {
+                                margin: 0px;
+                                font-size: 14px;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                font-weight: 500;
+                                line-height: 16px;
+                                color: rgb(5, 15, 25);
+                            }
+                            
+                            .getstarted-span {
+                                text-decoration: none;
+                                cursor: pointer;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                color: rgb(0, 82, 255);
+                            }
+                            
+                            .getstarted {
+                                position: relative;
+                                width: auto;
+                                margin: 0px;
+                                border-radius: 4px;
+                                font-weight: 500;
+                                color: rgb(255, 255, 255);
+                                cursor: pointer;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                padding: 10px 12px;
+                                font-size: 14px;
+                                line-height: 14px;
+                                border: 1px solid rgb(0, 82, 255);
+                                background-color: rgb(0, 81, 255);
+                            }
+                            
+                            .getstarted-div {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                pointer-events: none;
+                                font-weight: 500;
+                                color: rgb(255, 255, 255);
+                                cursor: pointer;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                padding: 10px 12px;
+                                font-size: 14px;
+                                line-height: 14px;
+                                border: 1px solid rgb(0, 82, 255);
+                                background-color: rgb(0, 82, 255);
+                            }
+                            
+                            .getstarted:hover {
+                                animation: 0.4s;
+                                background-color: rgb(17, 13, 240);
+                            }
+                            
+                            .portfolio {
+                                display: flex;
+                                align-items: center;
+                                flex-direction: row;
+                                box-sizing: border-box;
+                                border-style: solid;
+                                border-width: 0;
+                            }
+                            
+                            .portfolio-section {
+                                display: flex;
+                                cursor: pointer;
+                                align-items: flex-start;
+                                flex-direction: column;
+                                padding-top: 100px;
+                                padding-bottom: 111px;
+                                padding-left: 150px;
+                                flex-grow: 1;
+                                flex-shrink: 1;
+                                flex-basis: 0%;
+                            }
+                            
+                            .portfolio-first-section {
+                                display: flex;
+                                cursor: pointer;
+                                align-items: center;
+                                flex-direction: row;
+                                color: rgb(0, 82, 255);
+                                font-weight: 600;
+                            }
+                            
+                            .portbluelogo {
+                                display: flex;
+                                cursor: pointer;
+                                align-items: center;
+                                width: 24px;
+                                height: 24px;
+                                object-fit: cover;
+                                fill: none;
+                                margin-right: 8px;
+                            }
+                            
+                            .portarrow {
+                                height: 12px;
+                                width: 16px;
+                                fill: none;
+                                font-weight: 4000;
+                                margin-left: 0;
+                                color: rgb(0, 82, 255);
+                                margin-top: 8px;
+                                margin-right: 8px;
+                                margin-bottom: 8px;
+                                margin-left: 8px;
+                            }
+                            
+                            .fsbt {
+                                font-size: 62px;
+                                font-weight: 600;
+                                line-height: 1.15;
+                                margin-top: 8px;
+                                margin-bottom: 16px;
+                            }
+                            
+                            .fsbti {
+                                font-size: 62px;
+                                font-weight: 600;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                line-height: 1.15;
+                                margin-top: 0.68em;
+                                margin-bottom: 0.68em;
+                                margin-left: 0;
+                                margin-right: 0;
+                                box-sizing: border-box;
+                                border-style: solid;
+                                border-width: 0;
+                            }
+                            
+                            .fsst {
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 1.4;
+                                margin-bottom: 32px;
+                            }
+                            
+                            .fsfs {
+                                display: flex;
+                                align-items: flex-start;
+                                flex-direction: column;
+                                min-width: 480px;
+                                box-sizing: border-box;
+                                border-style: solid;
+                                border-width: 0;
+                            }
+                            
+                            .fsfsef {
+                                display: flex;
+                                flex-direction: row;
+                                width: 100%;
+                            }
+                            
+                            .fsfse {
+                                display: flex;
+                                flex: 1 1 auto;
+                                flex-direction: row;
+                                position: relative;
+                                border-width: 1px;
+                                border-style: solid;
+                                border-color: gray;
+                                border-radius: 4px;
+                                transition: all 0.15s ease 0s;
+                                background: rgb(255, 255, 255);
+                            }
+                            
+                            .fsfsei {
+                                z-index: 0;
+                                flex: 1 1 0px;
+                                width: 100%;
+                                margin: 0px;
+                                padding: 20px;
+                                border: none;
+                                border-radius: 3px;
+                                background: none;
+                                font-size: 18px;
+                                font-weight: 400;
+                                letter-spacing: normal;
+                                word-spacing: normal;
+                                text-transform: none;
+                                text-indent: 0px;
+                                text-shadow: none;
+                                display: inline-block;
+                                text-align: start;
+                                appearance: auto;
+                            }
+                            
+                            .fsbs {
+                                margin-left: 16px;
+                                box-sizing: border-box;
+                                height: 100%;
+                                margin: 0;
+                                font-weight: 400;
+                            }
+                            
+                            .fsbsb {
+                                position: relative;
+                                width: 100%;
+                                margin: 0px;
+                                border-radius: 4px;
+                                color: rgb(197, 197, 197);
+                                cursor: pointer;
+                                transition: all 80ms ease-in-out 0s;
+                                padding: 24px;
+                                font-size: 16px;
+                                border: 1px solid rgb(0, 82, 225);
+                                background-color: rgb(0, 82, 225);
+                                margin-left: 16px;
+                            }
+                            
+                            .fsbsbt {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                pointer-events: none;
+                                flex-wrap: nowrap;
+                                white-space: nowrap;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                font-weight: 500;
+                                font-size: 16px;
+                                text-transform: none;
+                            }
+                            
+                            .fsbsbti {
+                                margin-left: var(--spacing-3);
+                                margin-right: var(--spacing-3);
+                                font-weight: 500;
+                            }
+                            
+                            .terms {
+                                font-size: 9px;
+                                margin-top: 12px;
+                                text-decoration: underline;
+                                color: #0667d0;
+                            }
+                            
+                            .pss {
+                                display: flex;
+                                padding-top: 40px;
+                                padding-left: 24px;
+                                justify-content: flex-end;
+                                flex: 2 1 0%;
+                            }
+                            
+                            .pssi {
+                                margin-right: 50px;
+                            }
+                            
+                            .price-table-positioner {
+                                position: relative;
+                                display: block;
+                            }
+                            
+                            .static-layout {
+                                display: flex;
+                                flex-shrink: 0;
+                                width: 100%;
+                                margin: 0px auto;
+                                flex-direction: column;
+                                padding: 0px;
+                                max-width: 1142px;
+                                border: 1px solid rgba(91, 97, 110, 0.2);
+                                border-radius: 4px;
+                                box-shadow: 0 4px 12px 0 rgba(50, 53, 61, 0.02);
+                            }
+                            
+                            .asset-table {
+                                width: 100%;
+                                border-radius: 0px;
+                                overflow-x: auto;
+                            }
+                            
+                            .table {
+                                width: 100%;
+                                padding: 0px;
+                                background: rgb(255, 255, 255);
+                                border-spacing: 0px;
+                                border-collapse: separate;
+                                caption-side: top;
+                            }
+                            
+                            .colg {
+                                width: 32px;
+                                align-items: center;
+                            }
+                            
+                            .asset-table-helpers-head {
+                                display: table-header-group;
+                                vertical-align: middle;
+                                border: none;
+                                width: 100%;
+                                padding: 0px;
+                                background: rgb(255, 255, 255);
+                                border-spacing: 0px;
+                                border-collapse: separate;
+                                caption-side: top;
+                                align-items: center;
+                            }
+                            
+                            .asset-table-helpers-row {
+                                border-top: 1px solid 1px solid rgb(91, 97, 110);
+                                display: table-row;
+                                vertical-align: inherit;
+                                border-color: inherit;
+                            }
+                            
+                            .asset-table-helpers-th {
+                                padding-left: 32px;
+                                padding: 16px 48px 16px 0px;
+                                border-bottom: none;
+                                text-align: left;
+                                display: table-cell;
+                                vertical-align: inherit;
+                                font-weight: bold;
+                            }
+                            
+                            .asset-helpers-column {
+                                align-items: center;
+                                text-align: center;
+                            }
+                            
+                            .text-element1 {
+                                display: block;
+                                width: auto;
+                                font-weight: 400;
+                                align-items: center;
+                                white-space: nowrap;
+                                font-size: 14px;
+                                line-height: 1.6;
+                                color: rgb(208, 208, 209);
+                                transition: color 80ms ease-in-out 0s;
+                            }
+                            
+                            .asset-table-body {
+                                display: table-row-group;
+                                vertical-align: middle;
+                                padding: 0px;
+                                border: none;
+                                transition: opacity 300ms ease 0s;
+                            }
+                            /*work on this later*/
+                            
+                            .asset-table-body:hover {
+                                background-color: rgb(200, 200, 206);
+                            }
+                            
+                            .asset-table-row {
+                                display: table-row;
+                                vertical-align: inherit;
+                                border-color: inherit;
+                                text-indent: initial;
+                                background: rgb(255, 255, 255);
+                                user-select: none;
+                            }
+                            
+                            .asset-table-column2 {
+                                padding: 14px 48px 14px 0px;
+                                border-top: 1px solid rgb(208, 208, 209);
+                                cursor: default;
+                                position: relative;
+                                width: 85px;
+                                display: table-cell;
+                                vertical-align: inherit;
+                            }
+                            
+                            .text-element2 {
+                                text-align: center;
+                                font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                                line-height: 1.3;
+                                color: rgb(91, 97, 110);
+                                font-size: 18px;
+                                font-weight: 400;
+                                display: block;
+                                margin: 0px;
+                            }
+                            
+                            .asset-table-column2two {
+                                padding: 14px 48px 14px 0px;
+                                border-top: 1px solid rgb(208, 208, 209);
+                                cursor: pointer;
+                                min-width: 140px;
+                            }
+                            
+                            .asset-table-column2two-inner {
+                                display: flex;
+                                flex: 1 1 auto;
+                                align-items: center;
+                                flex-direction: row;
+                            }
+                            
+                            .asset-table-column2two-inner-img {
+                                flex-shrink: 0;
+                                border-radius: 100%;
+                                height: 36px;
+                                width: 36px;
+                                aspect-ratio: auto 36 / 36;
+                            }
+                            
+                            .asset-table-column2two-inner-text {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                            }
+                            
+                            .asset-table-column2two-inner-text-one {
+                                padding-left: 16px;
+                                text-align: left;
+                                line-height: 1.3;
+                                color: rgb(10, 11, 13);
+                                font-size: 18px;
+                                font-weight: 400;
+                                display: block;
+                                margin: 0px;
+                            }
+                            
+                            .asset-table-column2two-inner-text-two {
+                                padding-left: 16px;
+                                text-align: left;
+                                line-height: 1.3;
+                                color: rgb(208, 208, 209);
+                                font-size: 18px;
+                                font-weight: 400;
+                                display: block;
+                                margin: 0px;
+                            }
+                            
+                            .atc3 {
+                                padding: 14px 48px 14px 0px;
+                                border-top: 1px solid rgb(208, 208, 209);
+                                cursor: default;
+                                width: 132px;
+                            }
+                            
+                            .atc3t {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: flex-start;
+                            }
+                            
+                            .atc3t1 {
+                                text-align: left;
+                                line-height: 1.3;
+                                color: rgb(10, 11, 13);
+                                font-size: 18px;
+                                font-weight: 400;
+                                display: block;
+                                margin: 0px;
+                            }
+                            
+                            .atc3t2 {
+                                display: none;
+                                width: 100%;
+                                text-align: right;
+                                font-variant-numeric: tabular-nums;
+                                line-height: 1.3;
+                                color: rgb(-9, 133, 81);
+                                font-size: 18px;
+                                font-weight: 400;
+                            }
+                            
+                            .atc4 {
+                                padding: 14px 48px 14px 0px;
+                                border-top: 1px solid rgb(208, 208, 209);
+                                cursor: default;
+                                width: 100px;
+                                margin-right: 20px;
+                                text-align: left;
+                            }
+                            
+                            .atc4t {
+                                width: 100%;
+                                text-align: right;
+                                font-variant-numeric: tabular-nums;
+                                line-height: 1.3;
+                                color: rgb(-9, 133, 81);
+                                font-size: 18px;
+                                font-weight: 400;
+                                display: block;
+                                margin: 0px;
+                            }
+                            
+                            .atc5 {
+                                border-top: 1px solid rgb(208, 208, 209);
+                                cursor: default;
+                                width: 100px;
+                                padding: 5px 25px 5px 5px;
+                            }
+                            
+                            .atc5i {
+                                flex-shrink: 0;
+                                border-radius: 100%;
+                                height: 36px;
+                                width: 36px;
+                                aspect-ratio: auto 36 / 36;
+                            }
+                            
+                            .atc6 {
+                                width: 70px;
+                                padding-right: 32px;
+                                padding: 14px 48px 14px 0px;
+                                border-top: 1px solid rgb(208, 208, 209);
+                                cursor: default;
+                            }
+                            
+                            .atc6b {
+                                padding: 8px 16px;
+                                white-space: nowrap;
+                                position: relative;
+                                width: auto;
+                                margin: 0px;
+                                border-radius: 4px;
+                                color: rgb(255, 255, 255);
+                                cursor: pointer;
+                                transition: all 80ms ease-in-out 0s;
+                                font-size: 14px;
+                                border: 1px solid rgb(9, 133, 81);
+                                background-color: rgb(9, 133, 81);
+                            }
+                            
+                            .static-layout2 {
+                                display: flex;
+                                flex-shrink: 0;
+                                width: 100%;
+                                max-width: 900px;
+                                margin: 0px auto;
+                                padding: 24px;
+                            }
+                            
+                            .st2-contents {
+                                display: flex;
+                                flex-direction: row;
+                                flex-grow: 1;
+                            }
+                            
+                            .st2c {
+                                display: flex;
+                                flex-direction: row;
+                                flex-grow: 1;
+                                flex-shrink: 0;
+                                flex-basis: auto;
+                                position: relative;
+                                /*background-color: rgb(91, 97, 110);*/
+                                height: auto;
+                                width: 100%;
+                            }
+                            
+                            .st2c-earn {
+                                display: flex;
+                                justify-content: flex-start;
+                                flex-direction: row;
+                                flex: 1 1 50%;
+                                width: 100%;
+                            }
+                            
+                            .st2c-earn-contents {
+                                display: flex;
+                                flex-direction: column;
+                                max-width: 350px;
+                                justify-content: center;
+                                z-index: 1;
+                                min-width: 250px;
+                            }
+                            
+                            .st2c-earn-contents-h2 {
+                                line-height: 1.3;
+                                color: rgb(10, 11, 13);
+                                font-size: 32px;
+                                font-weight: 500;
+                                display: block;
+                                margin: 0px 0px 16px;
+                            }
+                            
+                            .st2c-earn-contents-p {
+                                font-size: 14px;
+                                line-height: 1.6;
+                                font-weight: 400;
+                                color: rgb(10, 11, 13);
+                            }
+                            
+                            .st2c-earn-contents-div {
+                                display: block;
+                            }
+                            
+                            .st2c-button {
+                                position: relative;
+                                width: auto;
+                                margin: 0px;
+                                border-radius: 4px;
+                                color: rgb(255, 255, 255);
+                                cursor: pointer;
+                                transition: all 80ms ease-in-out 0s;
+                                padding: 12px 16px;
+                                font-size: 14px;
+                                border: 1px solid rgb(0, 82, 255);
+                                background-color: rgb(0, 82, 255);
+                            }
+                            
+                            .st2c-bs {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                pointer-events: none;
+                                flex-wrap: nowrap;
+                                white-space: nowrap;
+                                font-weight: 500;
+                            }
+                            
+                            .st2c-banner {
+                                display: flex;
+                                justify-content: flex-end;
+                                flex-direction: row;
+                                flex: 1 1 50%;
+                                width: 100%;
+                            }
+                            /* .st2c-banner:hover {
                                             background: blueviolet;
                                             box-shadow: rgb(0 0 0 / 8%) 0px 0px 0px;
                                             transition: box-shadow 500ms ease 0s, opacity 500ms ease 0s, z-index 0ms ease-out 500ms;
                                         }*/
-                                    
-                                    .st2cb-contents {
-                                        width: 100%;
-                                    }
-                                    
-                                    .st2cbc-grouping {
-                                        display: flex;
-                                        justify-content: center;
-                                        flex-direction: column;
-                                        min-width: 500px;
-                                        flex-grow: 1;
-                                    }
-                                    
-                                    .st2cbg-1 {
-                                        background: rgb(255, 255, 255);
-                                        border-radius: 8px;
-                                        box-shadow: rgb(0 0 0 / 8%) 0px 0px 0px;
-                                        /* transition: box-shadow 500ms ease 0s, opacity 500ms ease 0s, z-index 0ms ease-out 500ms;*/
-                                        cursor: pointer;
-                                        opacity: 0.9;
-                                        margin-bottom: 0px;
-                                        margin-top: -1px;
-                                        display: flex;
-                                        width: 100%;
-                                        padding: 24px;
-                                        white-space: nowrap;
-                                        border: none;
-                                    }
-                                    
-                                    .st2cbcg1d2-d {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                    }
-                                    
-                                    .st2cbg1d2d-i {
-                                        height: 38px;
-                                        width: 38px;
-                                        margin-right: 15px;
-                                        border-style: none;
-                                    }
-                                    
-                                    .st2cbg1d2d-s1 {
-                                        white-space: normal;
-                                        line-height: 1.3;
-                                        color: rgb(10, 11, 13);
-                                        font-size: 22px;
-                                        font-weight: 500;
-                                        display: block;
-                                        margin: 0px;
-                                    }
-                                    
-                                    .st2cbg1d2d-s2 {
-                                        margin: 0px 16px;
-                                        line-height: 1.3;
-                                        color: rgb()10, 11, 13;
-                                        font-size: 18px;
-                                        font-weight: 500;
-                                    }
-                                    /*.st2cbg1-d1 {
+                            
+                            .st2cb-contents {
+                                width: 100%;
+                            }
+                            
+                            .st2cbc-grouping {
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                min-width: 500px;
+                                flex-grow: 1;
+                            }
+                            
+                            .st2cbg-1 {
+                                background: rgb(255, 255, 255);
+                                border-radius: 8px;
+                                box-shadow: rgb(0 0 0 / 8%) 0px 0px 0px;
+                                /* transition: box-shadow 500ms ease 0s, opacity 500ms ease 0s, z-index 0ms ease-out 500ms;*/
+                                cursor: pointer;
+                                opacity: 0.9;
+                                margin-bottom: 0px;
+                                margin-top: -1px;
+                                display: flex;
+                                width: 100%;
+                                padding: 24px;
+                                white-space: nowrap;
+                                border: none;
+                            }
+                            
+                            .st2cbcg1d2-d {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            
+                            .st2cbg1d2d-i {
+                                height: 38px;
+                                width: 38px;
+                                margin-right: 15px;
+                                border-style: none;
+                            }
+                            
+                            .st2cbg1d2d-s1 {
+                                white-space: normal;
+                                line-height: 1.3;
+                                color: rgb(10, 11, 13);
+                                font-size: 22px;
+                                font-weight: 500;
+                                display: block;
+                                margin: 0px;
+                            }
+                            
+                            .st2cbg1d2d-s2 {
+                                margin: 0px 16px;
+                                line-height: 1.3;
+                                color: rgb()10, 11, 13;
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                            /*.st2cbg1-d1 {
                                             display: flex;
                                             align-items: center;
                                             justify-content: center;
                                         }*/
-                                    
-                                    .st2cbg1-d2 {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        margin-left: auto;
-                                    }
-                                    
-                                    .d2s {
-                                        margin-left: 24px;
-                                        color: rgb(9, 133, 81);
-                                        font-weight: 500;
-                                    }
-                                    
-                                    .st2c-link {
-                                        color: rgb(0, 82, 255);
-                                        display: block;
-                                        margin: 16px 0 0 24px;
-                                        font-weight: 500;
-                                        cursor: pointer;
-                                        font-size: 16px;
-                                        text-decoration: none;
-                                        transition: color 0.25s ease 0s;
-                                        background-color: transparent;
-                                    }
-                                    
-                                    .st3 {
-                                        display: flex;
-                                        flex-shrink: 0;
-                                        width: 100%;
-                                        max-width: 1180px;
-                                        margin: 0px auto;
-                                        padding: 24px;
-                                    }
-                                    
-                                    .st3h {
-                                        display: flex;
-                                        flex: 1 1 auto;
-                                        align-items: center;
-                                        flex-direction: column;
-                                        margin-top: 32px;
-                                        margin-bottom: 64px;
-                                    }
-                                    
-                                    .st3h2 {
-                                        margin-top: 0px;
-                                        margin-right: 0px;
-                                        margin-left: 0px;
-                                        margin-bottom: 8px;
-                                        font-size: 40px;
-                                        font-weight: 500;
-                                        color: rgb(10, 11, 13);
-                                        text-align: center;
-                                    }
-                                    
-                                    .st3hp {
-                                        color: rgba(91, 97, 110, 1);
-                                        text-align: center;
-                                    }
-                                    
-                                    .st3m {
-                                        display: flex;
-                                        width: 100%;
-                                        margin-top: 64px;
-                                        flex-direction: row;
-                                        justify-content: space-between;
-                                        align-items: center;
-                                    }
-                                    
-                                    .st3m1 {
-                                        /*might need further styling*/
-                                        display: flex;
-                                        flex-direction: column;
-                                        flex-grow: 1;
-                                        flex-shrink: 1;
-                                        flex-basis: 0%;
-                                    }
-                                    
-                                    .st3m1div {
-                                        display: flex;
-                                        flex-direction: row;
-                                        margin-bottom: 40px;
-                                    }
-                                    
-                                    .st3m1d {
-                                        margin-top: -8px;
-                                        flex-shrink: 0;
-                                        width: 72px;
-                                        height: 72px;
-                                        margin-right: 32px;
-                                        background-color: rgb(255, 255, 255);
-                                        border-radius: 50%;
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        box-shadow: rgb(218 225 233 / 56%) 0px 8px 16px;
-                                    }
-                                    
-                                    .st3m1d2 {
-                                        display: block;
-                                    }
-                                    
-                                    .st3m1d2h {
-                                        display: block;
-                                        margin-block-start: 0.83em;
-                                        margin-block-end: 0.83em;
-                                        margin-inline-start: 0px;
-                                        margin-inline-end: 0px;
-                                    }
-                                    
-                                    .st3m1d2p {
-                                        display: block;
-                                        margin-block-start: 1em;
-                                        margin-block-end: 1em;
-                                        margin-inline-start: 0px;
-                                        margin-inline-end: 0px;
-                                    }
-                                    
-                                    .mal {
-                                        color: #0667d0;
-                                        text-decoration: none;
-                                    }
-                                    
-                                    .st3m2 {
-                                        max-width: 700px;
-                                    }
-                                    
-                                    .st3m2p {
-                                        width: 100%;
-                                    }
-                                    
-                                    .st3m2i {
-                                        width: 100%;
-                                    }
-                                    
-                                    .divider {
-                                        width: 100%;
-                                        height: 1px;
-                                        background-color: rgb(238, 240, 243);
-                                    }
-                                    
-                                    .st4 {
-                                        display: flex;
-                                        flex-shrink: 0;
-                                        width: 100%;
-                                        max-width: 1180px;
-                                        margin: 0px auto;
-                                        padding: 24px;
-                                    }
-                                    
-                                    .st4s {
-                                        display: flex;
-                                        flex-shrink: 0;
-                                        width: 100%;
-                                        max-width: 1180px;
-                                        margin: 0px auto;
-                                        padding: 24px;
-                                    }
-                                    
-                                    .st4sh {
-                                        display: flex;
-                                        align-items: center;
-                                        flex-direction: column;
-                                        margin: 64px 0px;
-                                        width: 100%;
-                                    }
-                                    
-                                    .st4smh {
-                                        margin-top: 0px;
-                                        margin-bottom: 24px;
-                                        line-height: 48px;
-                                        font-size: 40px;
-                                        color: rgba(10, 11, 13, 1);
-                                        font-weight: 500;
-                                        text-align: center;
-                                    }
-                                    
-                                    .st4sp {
-                                        font-size: 18px;
-                                        color: rgb(91, 97, 110);
-                                        margin: 0px;
-                                    }
-                                    
-                                    .st4sm {
-                                        display: flex;
-                                        width: 100%;
-                                        margin-top: 100px;
-                                        flex-direction: row;
-                                    }
-                                    
-                                    .st4sm1 {
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: center;
-                                        padding: 0px 24px;
-                                        text-align: center;
-                                        margin-bottom: 40px;
-                                    }
-                                    
-                                    .st4sm1s {
-                                        width: 30;
-                                        height: 30;
-                                        fill: none;
-                                        overflow: hidden;
-                                    }
-                                    
-                                    .m1sh {
-                                        margin-top: 32px;
-                                        margin-bottom: 0px;
-                                        font-size: 20px;
-                                        font-weight: 500;
-                                        color: rgba(10, 11, 13, 1);
-                                        text-align: center;
-                                    }
-                                    
-                                    .m1sp {
-                                        color: rgb(91, 97, 110);
-                                        margin: 16px 0 24px;
-                                        line-height: 24px;
-                                        font-size: 16px;
-                                    }
-                                    
-                                    .m1spa {
-                                        line-height: 28px;
-                                        color: rgb(0, 82, 255);
-                                        cursor: pointer;
-                                        font-size: 14px;
-                                        font-weight: 500;
-                                        text-decoration: none;
-                                        transition: color 0.25s ease 0s;
-                                    }
-                                    
-                                    .dst5 {
-                                        background: rgb(0, 82, 255);
-                                    }
-                                    
-                                    .st5 {
-                                        display: flex;
-                                        flex-shrink: 0;
-                                        width: 100%;
-                                        max-width: 1180px;
-                                        margin: 0px auto;
-                                        padding: 24px;
-                                    }
-                                    
-                                    .st5d {
-                                        display: flex;
-                                        flex: 1 1 auto;
-                                        flex-direction: row;
-                                        justify-content: center;
-                                        color: rgba(255, 255, 255, 1);
-                                        margin: 40px 0px;
-                                    }
-                                    
-                                    .st5d1 {
-                                        flex: 1 1 0%;
-                                        text-align: center;
-                                    }
-                                    
-                                    .st5d1o {
-                                        margin-top: 0px;
-                                        margin-right: 0px;
-                                        margin-left: 0px;
-                                        margin-bottom: 16px;
-                                        line-height: 48px;
-                                        font-size: 56px;
-                                        font-weight: 500;
-                                    }
-                                    
-                                    .st5d1t {
-                                        line-height: 24px;
-                                        font-size: 16px;
-                                        opacity: 0.7;
-                                    }
-                                    
-                                    .st6 {
-                                        display: flex;
-                                        flex-shrink: 0;
-                                        width: 100%;
-                                        max-width: 1180px;
-                                        margin: 0px auto;
-                                        padding: 24px;
-                                    }
-                                    
-                                    .st6l {
-                                        display: flex;
-                                        flex: 1 1 auto;
-                                        align-items: center;
-                                        flex-direction: column;
-                                        width: 80%;
-                                        margin: 64px 0px;
-                                    }
-                                    
-                                    .st6lh1 {
-                                        margin: 60;
-                                        line-height: 48px;
-                                        font-size: 48px;
-                                        color: rgba(10, 11, 13, 1);
-                                        font-weight: 500;
-                                    }
-                                    
-                                    .st6lh2 {
-                                        margin-top: 16px;
-                                        line-height: 28px;
-                                        font-size: 16px;
-                                        color: rgba(91, 97, 110, 1);
-                                        opacity: 0.7;
-                                        font-weight: 400;
-                                    }
-                                    
-                                    .st6i {
-                                        display: flex;
-                                        flex-direction: row;
-                                        width: 80%;
-                                        margin-top: 64px;
-                                    }
-                                    
-                                    .st6i1 {
-                                        text-align: center;
-                                    }
-                                    
-                                    .st6iip {
-                                        margin-right: 0px;
-                                        margin-left: 0px;
-                                        margin-top: 32px;
-                                        margin-bottom: 16px;
-                                        font-size: 20px;
-                                        color: rgba(10, 11, 13, 1);
-                                        font-weight: 500;
-                                    }
-                                    
-                                    .st6id {
-                                        flex: 1 1 0%;
-                                        height: 1px;
-                                        margin-top: 40px;
-                                        background-color: rgba(91, 97, 110, 0.66);
-                                    }
-                                    
-                                    .b {
-                                        display: flex;
-                                        flex-direction: row;
-                                        flex: 1 0 auto;
-                                        position: relative;
-                                        background-color: rgba(245, 248, 255, 1);
-                                        height: 460px;
-                                        width: 100%;
-                                        overflow: hidden;
-                                    }
-                                    
-                                    .b1 {
-                                        display: flex;
-                                        justify-content: center;
-                                        flex-direction: row;
-                                        flex: 1 1 50%;
-                                        width: 100px;
-                                    }
-                                    
-                                    .b1a {
-                                        display: flex;
-                                        flex-direction: column;
-                                        max-width: 350px;
-                                        justify-content: center;
-                                        z-index: 1;
-                                        min-width: 250px;
-                                    }
-                                    
-                                    .b1ah {
-                                        display: block;
-                                        margin: 0px 0px 16px;
-                                        line-height: 1.3;
-                                        color: rgb()10, 11, 13;
-                                        font-size: 32px;
-                                        font-weight: 500;
-                                    }
-                                    
-                                    .b1ap {
-                                        display: block;
-                                        margin: 0px 0px 16px;
-                                        line-height: 1.6;
-                                        color: rgb()10, 11, 13;
-                                        font-size: 14px;
-                                        font-weight: 500;
-                                    }
-                                    
-                                    .bbd {
-                                        display: block;
-                                    }
-                                    
-                                    .bb {
-                                        width: fit-content;
-                                        position: relative;
-                                        margin: 0px;
-                                        border-radius: 4px;
-                                        color: rgb(255, 255, 255);
-                                        cursor: pointer;
-                                        transition: all 80ms ease-in-out 0s;
-                                        padding: 12px 16px;
-                                        font-size: 16px;
-                                        border: 1px solid rgba(0, 82, 255, 1);
-                                        background-color: rgba(0, 82, 255, 1);
-                                    }
-                                    
-                                    .b2 {
-                                        display: flex;
-                                        justify-content: center;
-                                        flex-direction: row;
-                                        flex: 1 1 50%;
-                                        width: 100px;
-                                    }
-                                    
-                                    .b2i {
-                                        display: flex;
-                                        flex-direction: row;
-                                        align-self: flex-end;
-                                        position: absolute;
-                                        right: 0px;
-                                        top: 0px;
-                                        width: 65%;
-                                        max-width: 750px;
-                                        height: auto;
-                                    }
+                            
+                            .st2cbg1-d2 {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-left: auto;
+                            }
+                            
+                            .d2s {
+                                margin-left: 24px;
+                                color: rgb(9, 133, 81);
+                                font-weight: 500;
+                            }
+                            
+                            .st2c-link {
+                                color: rgb(0, 82, 255);
+                                display: block;
+                                margin: 16px 0 0 24px;
+                                font-weight: 500;
+                                cursor: pointer;
+                                font-size: 16px;
+                                text-decoration: none;
+                                transition: color 0.25s ease 0s;
+                                background-color: transparent;
+                            }
+                            
+                            .st3 {
+                                display: flex;
+                                flex-shrink: 0;
+                                width: 100%;
+                                max-width: 1180px;
+                                margin: 0px auto;
+                                padding: 24px;
+                            }
+                            
+                            .st3h {
+                                display: flex;
+                                flex: 1 1 auto;
+                                align-items: center;
+                                flex-direction: column;
+                                margin-top: 32px;
+                                margin-bottom: 64px;
+                            }
+                            
+                            .st3h2 {
+                                margin-top: 0px;
+                                margin-right: 0px;
+                                margin-left: 0px;
+                                margin-bottom: 8px;
+                                font-size: 40px;
+                                font-weight: 500;
+                                color: rgb(10, 11, 13);
+                                text-align: center;
+                            }
+                            
+                            .st3hp {
+                                color: rgba(91, 97, 110, 1);
+                                text-align: center;
+                            }
+                            
+                            .st3m {
+                                display: flex;
+                                width: 100%;
+                                margin-top: 64px;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                            }
+                            
+                            .st3m1 {
+                                /*might need further styling*/
+                                display: flex;
+                                flex-direction: column;
+                                flex-grow: 1;
+                                flex-shrink: 1;
+                                flex-basis: 0%;
+                            }
+                            
+                            .st3m1div {
+                                display: flex;
+                                flex-direction: row;
+                                margin-bottom: 40px;
+                            }
+                            
+                            .st3m1d {
+                                margin-top: -8px;
+                                flex-shrink: 0;
+                                width: 72px;
+                                height: 72px;
+                                margin-right: 32px;
+                                background-color: rgb(255, 255, 255);
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                box-shadow: rgb(218 225 233 / 56%) 0px 8px 16px;
+                            }
+                            
+                            .st3m1d2 {
+                                display: block;
+                            }
+                            
+                            .st3m1d2h {
+                                display: block;
+                                margin-block-start: 0.83em;
+                                margin-block-end: 0.83em;
+                                margin-inline-start: 0px;
+                                margin-inline-end: 0px;
+                            }
+                            
+                            .st3m1d2p {
+                                display: block;
+                                margin-block-start: 1em;
+                                margin-block-end: 1em;
+                                margin-inline-start: 0px;
+                                margin-inline-end: 0px;
+                            }
+                            
+                            .mal {
+                                color: #0667d0;
+                                text-decoration: none;
+                            }
+                            
+                            .st3m2 {
+                                max-width: 700px;
+                            }
+                            
+                            .st3m2p {
+                                width: 100%;
+                            }
+                            
+                            .st3m2i {
+                                width: 100%;
+                            }
+                            
+                            .divider {
+                                width: 100%;
+                                height: 1px;
+                                background-color: rgb(238, 240, 243);
+                            }
+                            
+                            .st4 {
+                                display: flex;
+                                flex-shrink: 0;
+                                width: 100%;
+                                max-width: 1180px;
+                                margin: 0px auto;
+                                padding: 24px;
+                            }
+                            
+                            .st4s {
+                                display: flex;
+                                flex-shrink: 0;
+                                width: 100%;
+                                max-width: 1180px;
+                                margin: 0px auto;
+                                padding: 24px;
+                            }
+                            
+                            .st4sh {
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                margin: 64px 0px;
+                                width: 100%;
+                            }
+                            
+                            .st4smh {
+                                margin-top: 0px;
+                                margin-bottom: 24px;
+                                line-height: 48px;
+                                font-size: 40px;
+                                color: rgba(10, 11, 13, 1);
+                                font-weight: 500;
+                                text-align: center;
+                            }
+                            
+                            .st4sp {
+                                font-size: 18px;
+                                color: rgb(91, 97, 110);
+                                margin: 0px;
+                            }
+                            
+                            .st4sm {
+                                display: flex;
+                                width: 100%;
+                                margin-top: 100px;
+                                flex-direction: row;
+                            }
+                            
+                            .st4sm1 {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                padding: 0px 24px;
+                                text-align: center;
+                                margin-bottom: 40px;
+                            }
+                            
+                            .st4sm1s {
+                                width: 30;
+                                height: 30;
+                                fill: none;
+                                overflow: hidden;
+                            }
+                            
+                            .m1sh {
+                                margin-top: 32px;
+                                margin-bottom: 0px;
+                                font-size: 20px;
+                                font-weight: 500;
+                                color: rgba(10, 11, 13, 1);
+                                text-align: center;
+                            }
+                            
+                            .m1sp {
+                                color: rgb(91, 97, 110);
+                                margin: 16px 0 24px;
+                                line-height: 24px;
+                                font-size: 16px;
+                            }
+                            
+                            .m1spa {
+                                line-height: 28px;
+                                color: rgb(0, 82, 255);
+                                cursor: pointer;
+                                font-size: 14px;
+                                font-weight: 500;
+                                text-decoration: none;
+                                transition: color 0.25s ease 0s;
+                            }
+                            
+                            .dst5 {
+                                background: rgb(0, 82, 255);
+                            }
+                            
+                            .st5 {
+                                display: flex;
+                                flex-shrink: 0;
+                                width: 100%;
+                                max-width: 1180px;
+                                margin: 0px auto;
+                                padding: 24px;
+                            }
+                            
+                            .st5d {
+                                display: flex;
+                                flex: 1 1 auto;
+                                flex-direction: row;
+                                justify-content: center;
+                                color: rgba(255, 255, 255, 1);
+                                margin: 40px 0px;
+                            }
+                            
+                            .st5d1 {
+                                flex: 1 1 0%;
+                                text-align: center;
+                            }
+                            
+                            .st5d1o {
+                                margin-top: 0px;
+                                margin-right: 0px;
+                                margin-left: 0px;
+                                margin-bottom: 16px;
+                                line-height: 48px;
+                                font-size: 56px;
+                                font-weight: 500;
+                            }
+                            
+                            .st5d1t {
+                                line-height: 24px;
+                                font-size: 16px;
+                                opacity: 0.7;
+                            }
+                            
+                            .st6 {
+                                display: flex;
+                                flex-shrink: 0;
+                                width: 100%;
+                                max-width: 1180px;
+                                margin: 0px auto;
+                                padding: 24px;
+                            }
+                            
+                            .st6l {
+                                display: flex;
+                                flex: 1 1 auto;
+                                align-items: center;
+                                flex-direction: column;
+                                width: 80%;
+                                margin: 64px 0px;
+                            }
+                            
+                            .st6lh1 {
+                                margin: 60;
+                                line-height: 48px;
+                                font-size: 48px;
+                                color: rgba(10, 11, 13, 1);
+                                font-weight: 500;
+                            }
+                            
+                            .st6lh2 {
+                                margin-top: 16px;
+                                line-height: 28px;
+                                font-size: 16px;
+                                color: rgba(91, 97, 110, 1);
+                                opacity: 0.7;
+                                font-weight: 400;
+                            }
+                            
+                            .st6i {
+                                display: flex;
+                                flex-direction: row;
+                                width: 80%;
+                                margin-top: 64px;
+                            }
+                            
+                            .st6i1 {
+                                text-align: center;
+                            }
+                            
+                            .st6iip {
+                                margin-right: 0px;
+                                margin-left: 0px;
+                                margin-top: 32px;
+                                margin-bottom: 16px;
+                                font-size: 20px;
+                                color: rgba(10, 11, 13, 1);
+                                font-weight: 500;
+                            }
+                            
+                            .st6id {
+                                flex: 1 1 0%;
+                                height: 1px;
+                                margin-top: 40px;
+                                background-color: rgba(91, 97, 110, 0.66);
+                            }
+                            
+                            .b {
+                                display: flex;
+                                flex-direction: row;
+                                flex: 1 0 auto;
+                                position: relative;
+                                background-color: rgba(245, 248, 255, 1);
+                                height: 460px;
+                                width: 100%;
+                                overflow: hidden;
+                            }
+                            
+                            .b1 {
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: row;
+                                flex: 1 1 50%;
+                                width: 100px;
+                            }
+                            
+                            .b1a {
+                                display: flex;
+                                flex-direction: column;
+                                max-width: 350px;
+                                justify-content: center;
+                                z-index: 1;
+                                min-width: 250px;
+                            }
+                            
+                            .b1ah {
+                                display: block;
+                                margin: 0px 0px 16px;
+                                line-height: 1.3;
+                                color: rgb()10, 11, 13;
+                                font-size: 32px;
+                                font-weight: 500;
+                            }
+                            
+                            .b1ap {
+                                display: block;
+                                margin: 0px 0px 16px;
+                                line-height: 1.6;
+                                color: rgb()10, 11, 13;
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                            
+                            .bbd {
+                                display: block;
+                            }
+                            
+                            .bb {
+                                width: fit-content;
+                                position: relative;
+                                margin: 0px;
+                                border-radius: 4px;
+                                color: rgb(255, 255, 255);
+                                cursor: pointer;
+                                transition: all 80ms ease-in-out 0s;
+                                padding: 12px 16px;
+                                font-size: 16px;
+                                border: 1px solid rgba(0, 82, 255, 1);
+                                background-color: rgba(0, 82, 255, 1);
+                            }
+                            
+                            .b2 {
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: row;
+                                flex: 1 1 50%;
+                                width: 100px;
+                            }
+                            
+                            .b2i {
+                                display: flex;
+                                flex-direction: row;
+                                align-self: flex-end;
+                                position: absolute;
+                                right: 0px;
+                                top: 0px;
+                                width: 65%;
+                                max-width: 750px;
+                                height: auto;
+                            }
+                            
+                            .l {
+                                display: flex;
+                                flex-shrink: 0;
+                                width: 100%;
+                                max-width: 1180px;
+                                margin: 0px auto;
+                                padding: 100px 24px;
+                                color: rgb(255, 255, 255);
+                            }
+                            
+                            .ld {
+                                width: 100%;
+                            }
+                            
+                            .ld2 {
+                                display: grid;
+                                grid-template-columns: 1fr 2fr;
+                                width: 100%;
+                                background: rgb(255, 255, 255);
+                            }
+                            
+                            .ld3 {
+                                display: flex;
+                                flex-direction: column;
+                                padding: 0px 4px;
+                                margin-bottom: 30px;
+                            }
+                            
+                            .ld31d {
+                                width: 200px;
+                            }
+                            
+                            .ldl31i {
+                                display: block;
+                                margin-bottom: 32px;
+                                height: 20px;
+                                width: 112px;
+                            }
+                            
+                            .ld32s {
+                                margin-right: 16px;
+                                padding: 4px;
+                                border-radius: 4px;
+                                background-color: rgb(255, 255, 255);
+                                border: 1px solid rgb(238, 240, 243);
+                                text-transform: none;
+                                font-family: inherit;
+                                font-size: 100%;
+                                line-height: 1.15;
+                                margin: 0;
+                            }
+                            
+                            .d3d {
+                                display: flex;
+                                flex-direction: column;
+                                margin-top: 20px;
+                            }
+                            
+                            .d3dl1 {
+                                font-size: 16px;
+                                line-height: 1.3;
+                                opacity: 0.7;
+                                color: rgb(17, 51, 85);
+                                text-decoration: none;
+                                max-width: 200px;
+                                margin-top: 0px;
+                            }
+                            
+                            .d3dl2 {
+                                display: flex;
+                                flex-direction: row;
+                            }
+                            
+                            .d3dl2-link1 {
+                                margin-bottom: 6px;
+                                font-size: 16px;
+                                line-height: 1.3;
+                                opacity: 0.7;
+                                color: rgb(17, 51, 85);
+                                text-decoration: none;
+                                max-width: 200px;
+                                cursor: pointer;
+                                transition: color 0.25s ease 0s;
+                                background-color: transparent;
+                            }
+                            
+                            .ld3t {
+                                display: grid;
+                                grid-template-columns: repeat(3, 1fr);
+                            }
+                            
+                            .ld3t1 {
+                                display: block;
+                            }
+                            
+                            .ld3t1a {
+                                display: flex;
+                                flex-direction: column;
+                                padding: 0px 4px;
+                                margin-bottom: 30px;
+                            }
+                            
+                            .ld3t1a2 {
+                                display: flex;
+                                flex-direction: column;
+                                padding: 0px 4px;
+                                margin-bottom: 30px;
+                            }
+                            
+                            .a1h {
+                                margin-bottom: 12px;
+                                margin-top: 0px;
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: rgb(17, 51, 85);
+                                display: block;
+                                margin-block-start: 0.83em;
+                                margin-block-end: 0.83em;
+                                margin-inline-start: 0px;
+                                margin-inline-end: 0px;
+                            }
+                            
+                            .a1a {
+                                font-size: 16px;
+                                line-height: 1.3;
+                                opacity: 0.7;
+                                color: rgb(17, 51, 85);
+                                text-decoration: none;
+                                max-width: 200px;
+                                cursor: pointer;
+                                transition: #0667d0 0.25s ease 0s;
+                            }

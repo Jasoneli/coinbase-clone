@@ -1185,3 +1185,109 @@
                                         text-decoration: none;
                                         transition: color 0.25s ease 0s;
                                     }
+                                    
+                                    .dst5 {
+                                        background: rgb(0, 82, 255);
+                                    }
+                                    
+                                    .st5 {
+                                        display: flex;
+                                        flex-shrink: 0;
+                                        width: 100%;
+                                        max-width: 1180px;
+                                        margin: 0px auto;
+                                        padding: 24px;
+                                    }
+                                    
+                                    .st5d {
+                                        display: flex;
+                                        flex: 1 1 auto;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        color: rgba(255, 255, 255, 1);
+                                        margin: 40px 0px;
+                                    }
+                                    
+                                    .st5d1 {
+                                        flex: 1 1 0%;
+                                        text-align: center;
+                                    }
+                                    
+                                    .st5d1o {
+                                        margin-top: 0px;
+                                        margin-right: 0px;
+                                        margin-left: 0px;
+                                        margin-bottom: 16px;
+                                        line-height: 48px;
+                                        font-size: 56px;
+                                        font-weight: 500;
+                                    }
+                                    
+                                    .st5d1t {
+                                        line-height: 24px;
+                                        font-size: 16px;
+                                        opacity: 0.7;
+                                    }
+                                    
+                                    .st6 {
+                                        display: flex;
+                                        flex-shrink: 0;
+                                        width: 100%;
+                                        max-width: 1180px;
+                                        margin: 0px auto;
+                                        padding: 24px;
+                                    }
+                                    
+                                    .st6l {
+                                        display: flex;
+                                        flex: 1 1 auto;
+                                        align-items: center;
+                                        flex-direction: column;
+                                        width: 80%;
+                                        margin: 64px 0px;
+                                    }
+                                    
+                                    .st6lh1 {
+                                        margin: 60;
+                                        line-height: 48px;
+                                        font-size: 48px;
+                                        color: rgba(10, 11, 13, 1);
+                                        font-weight: 500;
+                                    }
+                                    
+                                    .st6lh2 {
+                                        margin-top: 16px;
+                                        line-height: 28px;
+                                        font-size: 16px;
+                                        color: rgba(91, 97, 110, 1);
+                                        opacity: 0.7;
+                                        font-weight: 400;
+                                    }
+                                    
+                                    .st6i {
+                                        display: flex;
+                                        flex-direction: row;
+                                        width: 80%;
+                                        margin-top: 64px;
+                                    }
+                                    
+                                    .st6i1 {
+                                        text-align: center;
+                                    }
+                                    
+                                    .st6iip {
+                                        margin-right: 0px;
+                                        margin-left: 0px;
+                                        margin-top: 32px;
+                                        margin-bottom: 16px;
+                                        font-size: 20px;
+                                        color: rgba(10, 11, 13, 1);
+                                        font-weight: 500;
+                                    }
+                                    
+                                    .st6id {
+                                        flex: 1 1 0%;
+                                        height: 1px;
+                                        margin-top: 40px;
+                                        background-color: rgba(91, 97, 110, 0.66);
+                                    }
